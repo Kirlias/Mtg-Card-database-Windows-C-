@@ -92,12 +92,12 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="APIHandler.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Card.cs" />
-    <Compile Include="DatabaseHandler.cs" />
+    <Compile Include="LoadBtnCmd.cs" />
+    <Compile Include="MainData.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

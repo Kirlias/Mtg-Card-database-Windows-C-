@@ -5,10 +5,59 @@
     xmlns:local="using:Final"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainData}">
+    <Page.Resources>
+        <DataTemplate x:Key="FinalTemplate">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding name, Mode=OneWay}"/>
+                <ItemsControl ItemsSource="{Binding Cards, Mode=OneWay}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Page.DataContext>
+        <local:MainData/>
+    </Page.DataContext>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <TextBlock Text="{Binding CurrentCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Download" Label="appbarbutton" Command="{Binding LoadBtnCmd, Mode=OneWay}"/>
+            
+        </CommandBar>
+    </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="txtBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="1280">
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListView x:Name="listView"
+                  ItemTemplate="{StaticResource FinalTemplate}"
+                  ItemsSource="{Binding Cards, Mode=TwoWay}" 
+                  SelectedItem="{Binding SelectedCard, Mode=TwoWay}" 
+                  Grid.Row="1"
+        />
+
+
+            <ItemsControl/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <WebView Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}"/>
+
+        </Grid>
+
 
     </Grid>
 </Page>
