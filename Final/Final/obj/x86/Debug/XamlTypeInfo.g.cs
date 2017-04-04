@@ -282,6 +282,7 @@ namespace Final.Final_XamlTypeInfo
                 userType.AddMemberName("Cards");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("SelectedCard");
+                userType.AddMemberName("Filter");
                 userType.AddMemberName("DbConnection");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -337,6 +338,7 @@ namespace Final.Final_XamlTypeInfo
                 userType.AddMemberName("supertypesBlobbed");
                 userType.AddMemberName("variations");
                 userType.AddMemberName("variationsBlobbed");
+                userType.AddMemberName("cardDataString");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -898,27 +900,47 @@ namespace Final.Final_XamlTypeInfo
             var that = (global::Final.Card)instance;
             that.variationsBlobbed = (global::System.Nullable<global::System.Int32>)Value;
         }
-        private object get_45_MainData_CardName(object instance)
+        private object get_45_Card_cardDataString(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.cardDataString;
+        }
+        private void set_45_Card_cardDataString(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.cardDataString = (global::System.String)Value;
+        }
+        private object get_46_MainData_CardName(object instance)
         {
             var that = (global::Final.MainData)instance;
             return that.CardName;
         }
-        private void set_45_MainData_CardName(object instance, object Value)
+        private void set_46_MainData_CardName(object instance, object Value)
         {
             var that = (global::Final.MainData)instance;
             that.CardName = (global::System.String)Value;
         }
-        private object get_46_MainData_SelectedCard(object instance)
+        private object get_47_MainData_SelectedCard(object instance)
         {
             var that = (global::Final.MainData)instance;
             return that.SelectedCard;
         }
-        private void set_46_MainData_SelectedCard(object instance, object Value)
+        private void set_47_MainData_SelectedCard(object instance, object Value)
         {
             var that = (global::Final.MainData)instance;
             that.SelectedCard = (global::Final.Card)Value;
         }
-        private object get_47_MainData_DbConnection(object instance)
+        private object get_48_MainData_Filter(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.Filter;
+        }
+        private void set_48_MainData_Filter(object instance, object Value)
+        {
+            var that = (global::Final.MainData)instance;
+            that.Filter = (global::System.String)Value;
+        }
+        private object get_49_MainData_DbConnection(object instance)
         {
             var that = (global::Final.MainData)instance;
             return that.DbConnection;
@@ -1201,22 +1223,34 @@ namespace Final.Final_XamlTypeInfo
                 xamlMember.Getter = get_44_Card_variationsBlobbed;
                 xamlMember.Setter = set_44_Card_variationsBlobbed;
                 break;
+            case "Final.Card.cardDataString":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "cardDataString", "String");
+                xamlMember.Getter = get_45_Card_cardDataString;
+                xamlMember.Setter = set_45_Card_cardDataString;
+                break;
             case "Final.MainData.CardName":
                 userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
                 xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "CardName", "String");
-                xamlMember.Getter = get_45_MainData_CardName;
-                xamlMember.Setter = set_45_MainData_CardName;
+                xamlMember.Getter = get_46_MainData_CardName;
+                xamlMember.Setter = set_46_MainData_CardName;
                 break;
             case "Final.MainData.SelectedCard":
                 userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
                 xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "SelectedCard", "Final.Card");
-                xamlMember.Getter = get_46_MainData_SelectedCard;
-                xamlMember.Setter = set_46_MainData_SelectedCard;
+                xamlMember.Getter = get_47_MainData_SelectedCard;
+                xamlMember.Setter = set_47_MainData_SelectedCard;
+                break;
+            case "Final.MainData.Filter":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "Filter", "String");
+                xamlMember.Getter = get_48_MainData_Filter;
+                xamlMember.Setter = set_48_MainData_Filter;
                 break;
             case "Final.MainData.DbConnection":
                 userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
                 xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "DbConnection", "SQLite.Net.SQLiteConnection");
-                xamlMember.Getter = get_47_MainData_DbConnection;
+                xamlMember.Getter = get_49_MainData_DbConnection;
                 xamlMember.SetIsReadOnly();
                 break;
             }

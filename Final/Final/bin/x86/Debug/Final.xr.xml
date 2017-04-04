@@ -5,7 +5,9 @@
     <RootPropertyPathName Name="name" />
     <RootPropertyPathName Name="CurrentCard" />
     <RootPropertyPathName Name="LoadBtnCmd" />
+    <RootPropertyPathName Name="cardDataString" />
     <RootPropertyPathName Name="imageUrl" />
+    <RootPropertyPathName Name="Filter" />
     <RootPropertyPathName Name="SelectedCard" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -29,12 +31,19 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Final.MainData" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
@@ -75,11 +84,20 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Source" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Final.MainPage" />
