@@ -27,14 +27,9 @@ namespace Final
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void btnInfo_Click(object sender, RoutedEventArgs e)
         {
-           
-        }
-
-        private void button_Click_1(object sender, RoutedEventArgs e)
-        {
-
+            this.Frame.Navigate(typeof(CardPage));
         }
     }
 }
