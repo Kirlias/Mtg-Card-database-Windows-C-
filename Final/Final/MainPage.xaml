@@ -22,7 +22,8 @@
             <CommandBar.Content>
                 <TextBlock Text="{Binding CurrentCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
             </CommandBar.Content>
-            <AppBarButton Icon="Download" Label="appbarbutton" Command="{Binding LoadBtnCmd, Mode=OneWay}"/>
+            <AppBarButton Icon="Download" Label="Download" Command="{Binding LoadBtnCmd, Mode=OneWay}" ToolTipService.ToolTip="Download"/>
+            <AppBarButton x:Name="btnInfo" Icon="Help" Label="More Info" ToolTipService.ToolTip="More Card Info" Click="btnInfo_Click" />
             
         </CommandBar>
     </Page.BottomAppBar>
@@ -54,7 +55,7 @@
                 <RowDefinition  Height="Auto"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <WebView Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}"/>
+            <WebView x:Name="WebView" Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}"/>
 
         </Grid>
 

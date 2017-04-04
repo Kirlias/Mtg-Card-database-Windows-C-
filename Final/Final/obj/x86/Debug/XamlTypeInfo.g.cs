@@ -132,7 +132,7 @@ namespace Final.Final_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[23];
             _typeNameTable[0] = "Final.MainData";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Final.LoadBtnCmd";
@@ -152,11 +152,12 @@ namespace Final.Final_XamlTypeInfo
             _typeNameTable[16] = "System.Nullable`1<Int32>";
             _typeNameTable[17] = "Boolean";
             _typeNameTable[18] = "SQLite.Net.SQLiteConnection";
-            _typeNameTable[19] = "Final.MainPage";
+            _typeNameTable[19] = "Final.CardPage";
             _typeNameTable[20] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[21] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[22] = "Final.MainPage";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[23];
             _typeTable[0] = typeof(global::Final.MainData);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Final.LoadBtnCmd);
@@ -176,9 +177,10 @@ namespace Final.Final_XamlTypeInfo
             _typeTable[16] = typeof(global::System.Nullable<global::System.Int32>);
             _typeTable[17] = typeof(global::System.Boolean);
             _typeTable[18] = typeof(global::SQLite.Net.SQLiteConnection);
-            _typeTable[19] = typeof(global::Final.MainPage);
+            _typeTable[19] = typeof(global::Final.CardPage);
             _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[22] = typeof(global::Final.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -223,7 +225,8 @@ namespace Final.Final_XamlTypeInfo
         private object Activate_13_List() { return new global::System.Collections.Generic.List<global::Final.Ruling>(); }
         private object Activate_14_Ruling() { return new global::Final.Ruling(); }
         private object Activate_15_List() { return new global::System.Collections.Generic.List<global::System.Nullable<global::System.Int32>>(); }
-        private object Activate_19_MainPage() { return new global::Final.MainPage(); }
+        private object Activate_19_CardPage() { return new global::Final.CardPage(); }
+        private object Activate_22_MainPage() { return new global::Final.MainPage(); }
         private void VectorAdd_4_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Final.Card>)instance;
@@ -434,9 +437,9 @@ namespace Final.Final_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  Final.MainPage
+            case 19:   //  Final.CardPage
                 userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_MainPage;
+                userType.Activator = Activate_19_CardPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -447,6 +450,13 @@ namespace Final.Final_XamlTypeInfo
 
             case 21:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  Final.MainPage
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_22_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
