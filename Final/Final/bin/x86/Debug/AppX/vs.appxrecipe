@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-04T17:37:48.781</Modified>
+      <Modified>2017-04-04T17:50:05.910</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Final.exe">
       <PackagePath>entrypoint\Final.exe</PackagePath>
-      <Modified>2017-04-04T17:37:48.476</Modified>
+      <Modified>2017-04-04T17:50:05.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Final.xr.xml">
       <PackagePath>Final.xr.xml</PackagePath>
-      <Modified>2017-04-04T16:52:50.890</Modified>
+      <Modified>2017-04-04T17:48:07.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-04T16:52:51.668</Modified>
+      <Modified>2017-04-04T17:48:08.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Core\Final.exe">
       <PackagePath>Final.exe</PackagePath>
-      <Modified>2017-04-04T17:37:48.776</Modified>
+      <Modified>2017-04-04T17:50:05.906</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

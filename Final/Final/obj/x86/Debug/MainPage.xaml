@@ -49,7 +49,7 @@
 
 
             <ItemsControl Grid.RowSpan="2">
-                <TextBox x:ConnectionId='3' x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Search" Width="320" Height="65"/>
+                <TextBox x:ConnectionId='3' x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="320" Height="65" />
             </ItemsControl>
         </Grid>
         <Grid Grid.Column="1">

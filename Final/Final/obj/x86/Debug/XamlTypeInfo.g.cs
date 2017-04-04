@@ -279,6 +279,7 @@ namespace Final.Final_XamlTypeInfo
                 userType.AddMemberName("Cards");
                 userType.AddMemberName("CardName");
                 userType.AddMemberName("SelectedCard");
+                userType.AddMemberName("Filter");
                 userType.AddMemberName("DbConnection");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -919,7 +920,17 @@ namespace Final.Final_XamlTypeInfo
             var that = (global::Final.MainData)instance;
             that.SelectedCard = (global::Final.Card)Value;
         }
-        private object get_48_MainData_DbConnection(object instance)
+        private object get_48_MainData_Filter(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.Filter;
+        }
+        private void set_48_MainData_Filter(object instance, object Value)
+        {
+            var that = (global::Final.MainData)instance;
+            that.Filter = (global::System.String)Value;
+        }
+        private object get_49_MainData_DbConnection(object instance)
         {
             var that = (global::Final.MainData)instance;
             return that.DbConnection;
@@ -1220,10 +1231,16 @@ namespace Final.Final_XamlTypeInfo
                 xamlMember.Getter = get_47_MainData_SelectedCard;
                 xamlMember.Setter = set_47_MainData_SelectedCard;
                 break;
+            case "Final.MainData.Filter":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "Filter", "String");
+                xamlMember.Getter = get_48_MainData_Filter;
+                xamlMember.Setter = set_48_MainData_Filter;
+                break;
             case "Final.MainData.DbConnection":
                 userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
                 xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "DbConnection", "SQLite.Net.SQLiteConnection");
-                xamlMember.Getter = get_48_MainData_DbConnection;
+                xamlMember.Getter = get_49_MainData_DbConnection;
                 xamlMember.SetIsReadOnly();
                 break;
             }

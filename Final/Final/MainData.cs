@@ -22,13 +22,13 @@ namespace Final
         public ObservableCollection<Card> Cards { get; set; }
         public string CardName { get; set;}
 
-        //private string _filter;
+        private string _filter;
         private List<Card> _AllCards = new List<Card>();
         private String APIResult;
         private HttpClient client = new HttpClient();
         private Uri gatherer = new Uri("https://api.magicthegathering.io/v1/cards");
         private Card _selectedCard;
-        //private String _cardData;
+        private String _cardData;
         public string CardDataString;
 
 
@@ -75,52 +75,52 @@ namespace Final
             }
         }
 
-        
-        //public string Filter
-        //{
-        //    get
-        //    {
-        //        return _filter;
-        //    }
-        //    set
-        //    {
-        //        if (value == _filter)
-        //        {
-        //            return;
-        //        }
-        //        _filter = value;
-        //        PropertyChanged?.Invoke(this,
-        //            new PropertyChangedEventArgs(nameof(Filter)));
-        //        PerformFiltering();
-        //    }
-        //}
 
-        //private void PerformFiltering()
-        //{
-        //    if (_filter == null)
-        //    {
-        //        _filter = "";
-        //    }
-        //    var lowerCaseFilter = Filter.ToLowerInvariant().Trim();
-        //    var result = _AllCards.Where(
-        //        d => d.CardsAsString.ToLowerInvariant()
-        //                .Contains(lowerCaseFilter)).ToList();
-        //    var toRemove = Cards.Except(result).ToList();
-        //    foreach (var x in toRemove)
-        //    {
-        //        Cards.Remove(x);
-        //    }
-        //    // Add back in the correct order.
-        //    var resultcount = result.Count;
-        //    for (int i = 0; i < resultcount; i++)
-        //    {
-        //        var resultItem = result[i];
-        //        if (i + 1 > Cards.Count || !Cards[i].Equals(resultItem))
-        //        {
-        //            Cards.Insert(i, resultItem);
-        //        }
-        //    }
-        //}
+        public string Filter
+        {
+            get
+            {
+                return _filter;
+            }
+            set
+            {
+                if (value == _filter)
+                {
+                    return;
+                }
+                _filter = value;
+                PropertyChanged?.Invoke(this,
+                    new PropertyChangedEventArgs(nameof(Filter)));
+                PerformFiltering();
+            }
+        }
+
+        private void PerformFiltering()
+        {
+            if (_filter == null)
+            {
+                _filter = "";
+            }
+            var lowerCaseFilter = Filter.ToLowerInvariant().Trim();
+            var result = _AllCards.Where(
+                d => d.name.ToLowerInvariant()
+                        .Contains(lowerCaseFilter)).ToList();
+            var toRemove = Cards.Except(result).ToList();
+            foreach (var x in toRemove)
+            {
+                Cards.Remove(x);
+            }
+            // Add back in the correct order.
+            var resultcount = result.Count;
+            for (int i = 0; i < resultcount; i++)
+            {
+                var resultItem = result[i];
+                if (i + 1 > Cards.Count || !Cards[i].Equals(resultItem))
+                {
+                    Cards.Insert(i, resultItem);
+                }
+            }
+        }
 
 
 
