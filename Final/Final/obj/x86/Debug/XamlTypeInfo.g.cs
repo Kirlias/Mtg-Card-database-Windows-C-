@@ -132,15 +132,53 @@ namespace Final.Final_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "Final.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable = new string[22];
+            _typeNameTable[0] = "Final.MainData";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "Final.LoadBtnCmd";
+            _typeNameTable[3] = "Final.Card";
+            _typeNameTable[4] = "System.Collections.ObjectModel.ObservableCollection`1<Final.Card>";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<Final.Card>";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "Int32";
+            _typeNameTable[8] = "System.Collections.Generic.List`1<String>";
+            _typeNameTable[9] = "System.Collections.Generic.List`1<Final.Legality>";
+            _typeNameTable[10] = "Final.Legality";
+            _typeNameTable[11] = "System.Nullable`1<Boolean>";
+            _typeNameTable[12] = "System.ValueType";
+            _typeNameTable[13] = "System.Collections.Generic.List`1<Final.Ruling>";
+            _typeNameTable[14] = "Final.Ruling";
+            _typeNameTable[15] = "System.Collections.Generic.List`1<System.Nullable`1<Int32>>";
+            _typeNameTable[16] = "System.Nullable`1<Int32>";
+            _typeNameTable[17] = "Boolean";
+            _typeNameTable[18] = "SQLite.Net.SQLiteConnection";
+            _typeNameTable[19] = "Final.MainPage";
+            _typeNameTable[20] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::Final.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable = new global::System.Type[22];
+            _typeTable[0] = typeof(global::Final.MainData);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::Final.LoadBtnCmd);
+            _typeTable[3] = typeof(global::Final.Card);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Final.Card>);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::Final.Card>);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::System.Int32);
+            _typeTable[8] = typeof(global::System.Collections.Generic.List<global::System.String>);
+            _typeTable[9] = typeof(global::System.Collections.Generic.List<global::Final.Legality>);
+            _typeTable[10] = typeof(global::Final.Legality);
+            _typeTable[11] = typeof(global::System.Nullable<global::System.Boolean>);
+            _typeTable[12] = typeof(global::System.ValueType);
+            _typeTable[13] = typeof(global::System.Collections.Generic.List<global::Final.Ruling>);
+            _typeTable[14] = typeof(global::Final.Ruling);
+            _typeTable[15] = typeof(global::System.Collections.Generic.List<global::System.Nullable<global::System.Int32>>);
+            _typeTable[16] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[17] = typeof(global::System.Boolean);
+            _typeTable[18] = typeof(global::SQLite.Net.SQLiteConnection);
+            _typeTable[19] = typeof(global::Final.MainPage);
+            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +213,53 @@ namespace Final.Final_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Final.MainPage(); }
+        private object Activate_0_MainData() { return new global::Final.MainData(); }
+        private object Activate_3_Card() { return new global::Final.Card(); }
+        private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Final.Card>(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Final.Card>(); }
+        private object Activate_8_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
+        private object Activate_9_List() { return new global::System.Collections.Generic.List<global::Final.Legality>(); }
+        private object Activate_10_Legality() { return new global::Final.Legality(); }
+        private object Activate_13_List() { return new global::System.Collections.Generic.List<global::Final.Ruling>(); }
+        private object Activate_14_Ruling() { return new global::Final.Ruling(); }
+        private object Activate_15_List() { return new global::System.Collections.Generic.List<global::System.Nullable<global::System.Int32>>(); }
+        private object Activate_19_MainPage() { return new global::Final.MainPage(); }
+        private void VectorAdd_4_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Final.Card>)instance;
+            var newItem = (global::Final.Card)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_5_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Final.Card>)instance;
+            var newItem = (global::Final.Card)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_8_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
+            var newItem = (global::System.String)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_9_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Final.Legality>)instance;
+            var newItem = (global::Final.Legality)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_13_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Final.Ruling>)instance;
+            var newItem = (global::Final.Ruling)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_15_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Nullable<global::System.Int32>>)instance;
+            var newItem = (global::System.Nullable<global::System.Int32>)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,18 +271,181 @@ namespace Final.Final_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Final.MainPage
-                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  Final.MainData
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_MainData;
+                userType.AddMemberName("LoadBtnCmd");
+                userType.AddMemberName("CurrentCard");
+                userType.AddMemberName("Cards");
+                userType.AddMemberName("CardName");
+                userType.AddMemberName("SelectedCard");
+                userType.AddMemberName("DbConnection");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Object
                 xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 2:   //  Final.LoadBtnCmd
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Final.Card
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_3_Card;
+                userType.AddMemberName("name");
+                userType.AddMemberName("manaCost");
+                userType.AddMemberName("cmc");
+                userType.AddMemberName("colors");
+                userType.AddMemberName("colorsBlobbed");
+                userType.AddMemberName("colorIdentity");
+                userType.AddMemberName("colorIdentityBlobbed");
+                userType.AddMemberName("type");
+                userType.AddMemberName("types");
+                userType.AddMemberName("typesBlobbed");
+                userType.AddMemberName("subtypes");
+                userType.AddMemberName("subtypesBlobbed");
+                userType.AddMemberName("rarity");
+                userType.AddMemberName("set");
+                userType.AddMemberName("setName");
+                userType.AddMemberName("text");
+                userType.AddMemberName("flavor");
+                userType.AddMemberName("artist");
+                userType.AddMemberName("power");
+                userType.AddMemberName("toughness");
+                userType.AddMemberName("layout");
+                userType.AddMemberName("multiverseid");
+                userType.AddMemberName("imageUrl");
+                userType.AddMemberName("printings");
+                userType.AddMemberName("printingsBlobbed");
+                userType.AddMemberName("originalText");
+                userType.AddMemberName("originalType");
+                userType.AddMemberName("legalities");
+                userType.AddMemberName("id");
+                userType.AddMemberName("reserved");
+                userType.AddMemberName("rulings");
+                userType.AddMemberName("rulingsBlobbed");
+                userType.AddMemberName("supertypes");
+                userType.AddMemberName("supertypesBlobbed");
+                userType.AddMemberName("variations");
+                userType.AddMemberName("variationsBlobbed");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.Collections.ObjectModel.ObservableCollection`1<Final.Card>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Final.Card>"));
+                userType.CollectionAdd = VectorAdd_4_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  System.Collections.ObjectModel.Collection`1<Final.Card>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
+                xamlType = userType;
+                break;
+
+            case 6:   //  String
+                xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Int32
+                xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  System.Collections.Generic.List`1<String>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_8_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 9:   //  System.Collections.Generic.List`1<Final.Legality>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_9_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Final.Legality
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_10_Legality;
+                userType.AddMemberName("format");
+                userType.AddMemberName("legality");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  System.Nullable`1<Boolean>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  System.ValueType
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 13:   //  System.Collections.Generic.List`1<Final.Ruling>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_13_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Final.Ruling
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_14_Ruling;
+                userType.AddMemberName("date");
+                userType.AddMemberName("text");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  System.Collections.Generic.List`1<System.Nullable`1<Int32>>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_15_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 16:   //  System.Nullable`1<Int32>
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.AddMemberName("HasValue");
+                userType.AddMemberName("Value");
+                xamlType = userType;
+                break;
+
+            case 17:   //  Boolean
+                xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 18:   //  SQLite.Net.SQLiteConnection
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 19:   //  Final.MainPage
+                userType = new global::Final.Final_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 21:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Final.Final_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -206,11 +453,763 @@ namespace Final.Final_XamlTypeInfo
         }
 
 
+        private object get_0_MainData_LoadBtnCmd(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.LoadBtnCmd;
+        }
+        private object get_1_MainData_CurrentCard(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.CurrentCard;
+        }
+        private void set_1_MainData_CurrentCard(object instance, object Value)
+        {
+            var that = (global::Final.MainData)instance;
+            that.CurrentCard = (global::Final.Card)Value;
+        }
+        private object get_2_MainData_Cards(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.Cards;
+        }
+        private void set_2_MainData_Cards(object instance, object Value)
+        {
+            var that = (global::Final.MainData)instance;
+            that.Cards = (global::System.Collections.ObjectModel.ObservableCollection<global::Final.Card>)Value;
+        }
+        private object get_3_Card_name(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.name;
+        }
+        private void set_3_Card_name(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.name = (global::System.String)Value;
+        }
+        private object get_4_Card_manaCost(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.manaCost;
+        }
+        private void set_4_Card_manaCost(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.manaCost = (global::System.String)Value;
+        }
+        private object get_5_Card_cmc(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.cmc;
+        }
+        private void set_5_Card_cmc(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.cmc = (global::System.Int32)Value;
+        }
+        private object get_6_Card_colors(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.colors;
+        }
+        private void set_6_Card_colors(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.colors = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_7_Card_colorsBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.colorsBlobbed;
+        }
+        private void set_7_Card_colorsBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.colorsBlobbed = (global::System.String)Value;
+        }
+        private object get_8_Card_colorIdentity(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.colorIdentity;
+        }
+        private void set_8_Card_colorIdentity(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.colorIdentity = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_9_Card_colorIdentityBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.colorIdentityBlobbed;
+        }
+        private void set_9_Card_colorIdentityBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.colorIdentityBlobbed = (global::System.String)Value;
+        }
+        private object get_10_Card_type(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.type;
+        }
+        private void set_10_Card_type(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.type = (global::System.String)Value;
+        }
+        private object get_11_Card_types(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.types;
+        }
+        private void set_11_Card_types(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.types = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_12_Card_typesBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.typesBlobbed;
+        }
+        private void set_12_Card_typesBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.typesBlobbed = (global::System.String)Value;
+        }
+        private object get_13_Card_subtypes(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.subtypes;
+        }
+        private void set_13_Card_subtypes(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.subtypes = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_14_Card_subtypesBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.subtypesBlobbed;
+        }
+        private void set_14_Card_subtypesBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.subtypesBlobbed = (global::System.String)Value;
+        }
+        private object get_15_Card_rarity(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.rarity;
+        }
+        private void set_15_Card_rarity(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.rarity = (global::System.String)Value;
+        }
+        private object get_16_Card_set(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.set;
+        }
+        private void set_16_Card_set(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.set = (global::System.String)Value;
+        }
+        private object get_17_Card_setName(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.setName;
+        }
+        private void set_17_Card_setName(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.setName = (global::System.String)Value;
+        }
+        private object get_18_Card_text(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.text;
+        }
+        private void set_18_Card_text(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.text = (global::System.String)Value;
+        }
+        private object get_19_Card_flavor(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.flavor;
+        }
+        private void set_19_Card_flavor(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.flavor = (global::System.String)Value;
+        }
+        private object get_20_Card_artist(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.artist;
+        }
+        private void set_20_Card_artist(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.artist = (global::System.String)Value;
+        }
+        private object get_21_Card_power(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.power;
+        }
+        private void set_21_Card_power(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.power = (global::System.String)Value;
+        }
+        private object get_22_Card_toughness(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.toughness;
+        }
+        private void set_22_Card_toughness(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.toughness = (global::System.String)Value;
+        }
+        private object get_23_Card_layout(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.layout;
+        }
+        private void set_23_Card_layout(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.layout = (global::System.String)Value;
+        }
+        private object get_24_Card_multiverseid(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.multiverseid;
+        }
+        private void set_24_Card_multiverseid(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.multiverseid = (global::System.Int32)Value;
+        }
+        private object get_25_Card_imageUrl(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.imageUrl;
+        }
+        private void set_25_Card_imageUrl(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.imageUrl = (global::System.String)Value;
+        }
+        private object get_26_Card_printings(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.printings;
+        }
+        private void set_26_Card_printings(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.printings = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_27_Card_printingsBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.printingsBlobbed;
+        }
+        private void set_27_Card_printingsBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.printingsBlobbed = (global::System.String)Value;
+        }
+        private object get_28_Card_originalText(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.originalText;
+        }
+        private void set_28_Card_originalText(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.originalText = (global::System.String)Value;
+        }
+        private object get_29_Card_originalType(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.originalType;
+        }
+        private void set_29_Card_originalType(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.originalType = (global::System.String)Value;
+        }
+        private object get_30_Card_legalities(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.legalities;
+        }
+        private void set_30_Card_legalities(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.legalities = (global::System.Collections.Generic.List<global::Final.Legality>)Value;
+        }
+        private object get_31_Legality_format(object instance)
+        {
+            var that = (global::Final.Legality)instance;
+            return that.format;
+        }
+        private void set_31_Legality_format(object instance, object Value)
+        {
+            var that = (global::Final.Legality)instance;
+            that.format = (global::System.String)Value;
+        }
+        private object get_32_Legality_legality(object instance)
+        {
+            var that = (global::Final.Legality)instance;
+            return that.legality;
+        }
+        private void set_32_Legality_legality(object instance, object Value)
+        {
+            var that = (global::Final.Legality)instance;
+            that.legality = (global::System.String)Value;
+        }
+        private object get_33_Card_id(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.id;
+        }
+        private void set_33_Card_id(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.id = (global::System.String)Value;
+        }
+        private object get_34_Card_reserved(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.reserved;
+        }
+        private void set_34_Card_reserved(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.reserved = (global::System.Nullable<global::System.Boolean>)Value;
+        }
+        private object get_35_Card_rulings(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.rulings;
+        }
+        private void set_35_Card_rulings(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.rulings = (global::System.Collections.Generic.List<global::Final.Ruling>)Value;
+        }
+        private object get_36_Ruling_date(object instance)
+        {
+            var that = (global::Final.Ruling)instance;
+            return that.date;
+        }
+        private void set_36_Ruling_date(object instance, object Value)
+        {
+            var that = (global::Final.Ruling)instance;
+            that.date = (global::System.String)Value;
+        }
+        private object get_37_Ruling_text(object instance)
+        {
+            var that = (global::Final.Ruling)instance;
+            return that.text;
+        }
+        private void set_37_Ruling_text(object instance, object Value)
+        {
+            var that = (global::Final.Ruling)instance;
+            that.text = (global::System.String)Value;
+        }
+        private object get_38_Card_rulingsBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.rulingsBlobbed;
+        }
+        private void set_38_Card_rulingsBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.rulingsBlobbed = (global::System.String)Value;
+        }
+        private object get_39_Card_supertypes(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.supertypes;
+        }
+        private void set_39_Card_supertypes(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.supertypes = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_40_Card_supertypesBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.supertypesBlobbed;
+        }
+        private void set_40_Card_supertypesBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.supertypesBlobbed = (global::System.String)Value;
+        }
+        private object get_41_Card_variations(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.variations;
+        }
+        private void set_41_Card_variations(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.variations = (global::System.Collections.Generic.List<global::System.Nullable<global::System.Int32>>)Value;
+        }
+        private object get_42_Nullable_HasValue(object instance)
+        {
+            var that = (global::System.Nullable<global::System.Int32>)instance;
+            return that.HasValue;
+        }
+        private object get_43_Nullable_Value(object instance)
+        {
+            var that = (global::System.Nullable<global::System.Int32>)instance;
+            return that.Value;
+        }
+        private object get_44_Card_variationsBlobbed(object instance)
+        {
+            var that = (global::Final.Card)instance;
+            return that.variationsBlobbed;
+        }
+        private void set_44_Card_variationsBlobbed(object instance, object Value)
+        {
+            var that = (global::Final.Card)instance;
+            that.variationsBlobbed = (global::System.Nullable<global::System.Int32>)Value;
+        }
+        private object get_45_MainData_CardName(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.CardName;
+        }
+        private void set_45_MainData_CardName(object instance, object Value)
+        {
+            var that = (global::Final.MainData)instance;
+            that.CardName = (global::System.String)Value;
+        }
+        private object get_46_MainData_SelectedCard(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.SelectedCard;
+        }
+        private void set_46_MainData_SelectedCard(object instance, object Value)
+        {
+            var that = (global::Final.MainData)instance;
+            that.SelectedCard = (global::Final.Card)Value;
+        }
+        private object get_47_MainData_DbConnection(object instance)
+        {
+            var that = (global::Final.MainData)instance;
+            return that.DbConnection;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Final.Final_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::Final.Final_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Final.MainData.LoadBtnCmd":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "LoadBtnCmd", "Final.LoadBtnCmd");
+                xamlMember.Getter = get_0_MainData_LoadBtnCmd;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Final.MainData.CurrentCard":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "CurrentCard", "Final.Card");
+                xamlMember.Getter = get_1_MainData_CurrentCard;
+                xamlMember.Setter = set_1_MainData_CurrentCard;
+                break;
+            case "Final.MainData.Cards":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "Cards", "System.Collections.ObjectModel.ObservableCollection`1<Final.Card>");
+                xamlMember.Getter = get_2_MainData_Cards;
+                xamlMember.Setter = set_2_MainData_Cards;
+                break;
+            case "Final.Card.name":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "name", "String");
+                xamlMember.Getter = get_3_Card_name;
+                xamlMember.Setter = set_3_Card_name;
+                break;
+            case "Final.Card.manaCost":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "manaCost", "String");
+                xamlMember.Getter = get_4_Card_manaCost;
+                xamlMember.Setter = set_4_Card_manaCost;
+                break;
+            case "Final.Card.cmc":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "cmc", "Int32");
+                xamlMember.Getter = get_5_Card_cmc;
+                xamlMember.Setter = set_5_Card_cmc;
+                break;
+            case "Final.Card.colors":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "colors", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_6_Card_colors;
+                xamlMember.Setter = set_6_Card_colors;
+                break;
+            case "Final.Card.colorsBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "colorsBlobbed", "String");
+                xamlMember.Getter = get_7_Card_colorsBlobbed;
+                xamlMember.Setter = set_7_Card_colorsBlobbed;
+                break;
+            case "Final.Card.colorIdentity":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "colorIdentity", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_8_Card_colorIdentity;
+                xamlMember.Setter = set_8_Card_colorIdentity;
+                break;
+            case "Final.Card.colorIdentityBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "colorIdentityBlobbed", "String");
+                xamlMember.Getter = get_9_Card_colorIdentityBlobbed;
+                xamlMember.Setter = set_9_Card_colorIdentityBlobbed;
+                break;
+            case "Final.Card.type":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "type", "String");
+                xamlMember.Getter = get_10_Card_type;
+                xamlMember.Setter = set_10_Card_type;
+                break;
+            case "Final.Card.types":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "types", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_11_Card_types;
+                xamlMember.Setter = set_11_Card_types;
+                break;
+            case "Final.Card.typesBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "typesBlobbed", "String");
+                xamlMember.Getter = get_12_Card_typesBlobbed;
+                xamlMember.Setter = set_12_Card_typesBlobbed;
+                break;
+            case "Final.Card.subtypes":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "subtypes", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_13_Card_subtypes;
+                xamlMember.Setter = set_13_Card_subtypes;
+                break;
+            case "Final.Card.subtypesBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "subtypesBlobbed", "String");
+                xamlMember.Getter = get_14_Card_subtypesBlobbed;
+                xamlMember.Setter = set_14_Card_subtypesBlobbed;
+                break;
+            case "Final.Card.rarity":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "rarity", "String");
+                xamlMember.Getter = get_15_Card_rarity;
+                xamlMember.Setter = set_15_Card_rarity;
+                break;
+            case "Final.Card.set":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "set", "String");
+                xamlMember.Getter = get_16_Card_set;
+                xamlMember.Setter = set_16_Card_set;
+                break;
+            case "Final.Card.setName":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "setName", "String");
+                xamlMember.Getter = get_17_Card_setName;
+                xamlMember.Setter = set_17_Card_setName;
+                break;
+            case "Final.Card.text":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "text", "String");
+                xamlMember.Getter = get_18_Card_text;
+                xamlMember.Setter = set_18_Card_text;
+                break;
+            case "Final.Card.flavor":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "flavor", "String");
+                xamlMember.Getter = get_19_Card_flavor;
+                xamlMember.Setter = set_19_Card_flavor;
+                break;
+            case "Final.Card.artist":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "artist", "String");
+                xamlMember.Getter = get_20_Card_artist;
+                xamlMember.Setter = set_20_Card_artist;
+                break;
+            case "Final.Card.power":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "power", "String");
+                xamlMember.Getter = get_21_Card_power;
+                xamlMember.Setter = set_21_Card_power;
+                break;
+            case "Final.Card.toughness":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "toughness", "String");
+                xamlMember.Getter = get_22_Card_toughness;
+                xamlMember.Setter = set_22_Card_toughness;
+                break;
+            case "Final.Card.layout":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "layout", "String");
+                xamlMember.Getter = get_23_Card_layout;
+                xamlMember.Setter = set_23_Card_layout;
+                break;
+            case "Final.Card.multiverseid":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "multiverseid", "Int32");
+                xamlMember.Getter = get_24_Card_multiverseid;
+                xamlMember.Setter = set_24_Card_multiverseid;
+                break;
+            case "Final.Card.imageUrl":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "imageUrl", "String");
+                xamlMember.Getter = get_25_Card_imageUrl;
+                xamlMember.Setter = set_25_Card_imageUrl;
+                break;
+            case "Final.Card.printings":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "printings", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_26_Card_printings;
+                xamlMember.Setter = set_26_Card_printings;
+                break;
+            case "Final.Card.printingsBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "printingsBlobbed", "String");
+                xamlMember.Getter = get_27_Card_printingsBlobbed;
+                xamlMember.Setter = set_27_Card_printingsBlobbed;
+                break;
+            case "Final.Card.originalText":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "originalText", "String");
+                xamlMember.Getter = get_28_Card_originalText;
+                xamlMember.Setter = set_28_Card_originalText;
+                break;
+            case "Final.Card.originalType":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "originalType", "String");
+                xamlMember.Getter = get_29_Card_originalType;
+                xamlMember.Setter = set_29_Card_originalType;
+                break;
+            case "Final.Card.legalities":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "legalities", "System.Collections.Generic.List`1<Final.Legality>");
+                xamlMember.Getter = get_30_Card_legalities;
+                xamlMember.Setter = set_30_Card_legalities;
+                break;
+            case "Final.Legality.format":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Legality");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "format", "String");
+                xamlMember.Getter = get_31_Legality_format;
+                xamlMember.Setter = set_31_Legality_format;
+                break;
+            case "Final.Legality.legality":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Legality");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "legality", "String");
+                xamlMember.Getter = get_32_Legality_legality;
+                xamlMember.Setter = set_32_Legality_legality;
+                break;
+            case "Final.Card.id":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "id", "String");
+                xamlMember.Getter = get_33_Card_id;
+                xamlMember.Setter = set_33_Card_id;
+                break;
+            case "Final.Card.reserved":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "reserved", "System.Nullable`1<Boolean>");
+                xamlMember.Getter = get_34_Card_reserved;
+                xamlMember.Setter = set_34_Card_reserved;
+                break;
+            case "Final.Card.rulings":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "rulings", "System.Collections.Generic.List`1<Final.Ruling>");
+                xamlMember.Getter = get_35_Card_rulings;
+                xamlMember.Setter = set_35_Card_rulings;
+                break;
+            case "Final.Ruling.date":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Ruling");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "date", "String");
+                xamlMember.Getter = get_36_Ruling_date;
+                xamlMember.Setter = set_36_Ruling_date;
+                break;
+            case "Final.Ruling.text":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Ruling");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "text", "String");
+                xamlMember.Getter = get_37_Ruling_text;
+                xamlMember.Setter = set_37_Ruling_text;
+                break;
+            case "Final.Card.rulingsBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "rulingsBlobbed", "String");
+                xamlMember.Getter = get_38_Card_rulingsBlobbed;
+                xamlMember.Setter = set_38_Card_rulingsBlobbed;
+                break;
+            case "Final.Card.supertypes":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "supertypes", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_39_Card_supertypes;
+                xamlMember.Setter = set_39_Card_supertypes;
+                break;
+            case "Final.Card.supertypesBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "supertypesBlobbed", "String");
+                xamlMember.Getter = get_40_Card_supertypesBlobbed;
+                xamlMember.Setter = set_40_Card_supertypesBlobbed;
+                break;
+            case "Final.Card.variations":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "variations", "System.Collections.Generic.List`1<System.Nullable`1<Int32>>");
+                xamlMember.Getter = get_41_Card_variations;
+                xamlMember.Setter = set_41_Card_variations;
+                break;
+            case "System.Nullable`1<Int32>.HasValue":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Nullable`1<Int32>");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "HasValue", "Boolean");
+                xamlMember.Getter = get_42_Nullable_HasValue;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "System.Nullable`1<Int32>.Value":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Nullable`1<Int32>");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "Value", "Int32");
+                xamlMember.Getter = get_43_Nullable_Value;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Final.Card.variationsBlobbed":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.Card");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "variationsBlobbed", "System.Nullable`1<Int32>");
+                xamlMember.Getter = get_44_Card_variationsBlobbed;
+                xamlMember.Setter = set_44_Card_variationsBlobbed;
+                break;
+            case "Final.MainData.CardName":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "CardName", "String");
+                xamlMember.Getter = get_45_MainData_CardName;
+                xamlMember.Setter = set_45_MainData_CardName;
+                break;
+            case "Final.MainData.SelectedCard":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "SelectedCard", "Final.Card");
+                xamlMember.Getter = get_46_MainData_SelectedCard;
+                xamlMember.Setter = set_46_MainData_SelectedCard;
+                break;
+            case "Final.MainData.DbConnection":
+                userType = (global::Final.Final_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Final.MainData");
+                xamlMember = new global::Final.Final_XamlTypeInfo.XamlMember(this, "DbConnection", "SQLite.Net.SQLiteConnection");
+                xamlMember.Getter = get_47_MainData_DbConnection;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

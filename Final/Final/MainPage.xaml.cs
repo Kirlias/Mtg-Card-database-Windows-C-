@@ -25,9 +25,16 @@ namespace Final
         public MainPage()
         {
             this.InitializeComponent();
-            APIHandler api = new APIHandler();
-            api.CallApi();
-            //txtBox.Text = api.PopulateDatabaseFromApi().ToString();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
