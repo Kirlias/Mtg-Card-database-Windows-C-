@@ -1,1 +1,1 @@
-C:\Users\zcleb\Desktop\Git\MTG\Final\Final\Final.csproj;x86
+C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\Final.csproj;x86
