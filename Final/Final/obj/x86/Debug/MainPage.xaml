@@ -22,13 +22,11 @@
             <CommandBar.Content>
                 <TextBlock Text="{Binding CurrentCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
             </CommandBar.Content>
-            <AppBarButton Icon="Download" Label="appbarbutton" Command="{Binding LoadBtnCmd, Mode=OneWay}"/>
-
+            <AppBarButton Icon="Download" Label="Download" Command="{Binding LoadBtnCmd, Mode=OneWay}" ToolTipService.ToolTip="Download"/>
         </CommandBar>
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="1280">
-
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="320"/>
@@ -46,11 +44,10 @@
                   SelectedItem="{Binding SelectedCard, Mode=TwoWay}" 
                   Grid.Row="2" Margin="0,5,0,0"
         />
-
-
             <ItemsControl Grid.RowSpan="2">
                 <TextBox x:ConnectionId='3' x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="320" Height="65" />
             </ItemsControl>
+
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
