@@ -1,1 +1,1 @@
-C:\Users\fripi\Source\Repos\Mtg-Card-database-Windows-C-\Final\Final\Final.csproj;x86
+C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\Final.csproj;x86

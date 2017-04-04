@@ -22,14 +22,13 @@
             <CommandBar.Content>
                 <TextBlock Text="{Binding CurrentCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
             </CommandBar.Content>
-            <AppBarButton Icon="Download" Label="Download" Command="{Binding LoadBtnCmd, Mode=OneWay}" ToolTipService.ToolTip="Download"/>
-            <AppBarButton x:Name="btnInfo" Icon="Help" Label="More Info" ToolTipService.ToolTip="More Card Info" Click="btnInfo_Click" />
-            
+            <AppBarButton Icon="Download" Label="appbarbutton" Command="{Binding LoadBtnCmd, Mode=OneWay}"/>
+
         </CommandBar>
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="1280">
-        
+
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="320"/>
@@ -37,25 +36,29 @@
         </Grid.ColumnDefinitions>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="56"/>
+                <RowDefinition Height="12"/>
+                <RowDefinition Height="53"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <ListView x:Name="listView"
                   ItemTemplate="{StaticResource FinalTemplate}"
                   ItemsSource="{Binding Cards, Mode=TwoWay}" 
                   SelectedItem="{Binding SelectedCard, Mode=TwoWay}" 
-                  Grid.Row="1"
+                  Grid.Row="2" Margin="0,5,0,0"
         />
 
 
-            <ItemsControl/>
+            <ItemsControl Grid.RowSpan="2">
+                <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Search" Width="320" Height="65"/>
+            </ItemsControl>
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition  Height="Auto"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <WebView x:Name="WebView" Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}"/>
+            <WebView Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}" Margin="0,0,0,350"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="940"/>
 
         </Grid>
 

@@ -42,7 +42,7 @@ namespace Final
             LoadCards();
             //CallApi();
         }
-
+        //Things
 
         public Card SelectedCard
         {
