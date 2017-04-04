@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-04T16:58:34.465</Modified>
+      <Modified>2017-04-04T17:37:48.781</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Final.exe">
       <PackagePath>entrypoint\Final.exe</PackagePath>
-      <Modified>2017-04-04T16:58:34.156</Modified>
+      <Modified>2017-04-04T17:37:48.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -521,7 +521,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-3\Final\Final\bin\x86\Debug\Core\Final.exe">
       <PackagePath>Final.exe</PackagePath>
-      <Modified>2017-04-04T16:58:34.460</Modified>
+      <Modified>2017-04-04T17:37:48.776</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -75,23 +75,7 @@ namespace Final
             }
         }
 
-        //public String CardData
-        //{
-        //    get
-        //    { return _cardData; }
-        //    set
-        //    {
-        //        _cardData = value;
-        //        if (value == null)
-        //        {
-                    
-        //        }
-        //        else
-        //        {
-        //        }
-        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CardDataString"));
-        //    }
-        //}
+        
         //public string Filter
         //{
         //    get
