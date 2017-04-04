@@ -28,7 +28,8 @@ namespace Final
         private HttpClient client = new HttpClient();
         private Uri gatherer = new Uri("https://api.magicthegathering.io/v1/cards");
         private Card _selectedCard;
-
+        //private String _cardData;
+        public string CardDataString;
 
 
         public MainData()
@@ -42,7 +43,7 @@ namespace Final
             LoadCards();
             //CallApi();
         }
-        //Things
+        
 
         public Card SelectedCard
         {
@@ -54,15 +55,43 @@ namespace Final
                 if (value == null)
                 {
                     CurrentCard = null;
+                    CardDataString = null;
                 }
                 else
-                {
+                {  
                     CurrentCard = value;
+                    CardDataString = "Name: " + CurrentCard.name + 
+                        "\nType: " + CurrentCard.type + 
+                        "\nColor: " + CurrentCard.colorsBlobbed + 
+                        "\nRarity: " + CurrentCard.rarity + 
+                        "\nManaCost: " + CurrentCard.manaCost + 
+                        "\nCMC: " + CurrentCard.cmc + 
+                        "\nText: " + CurrentCard.text;
+
+                    CurrentCard.cardDataString = CardDataString;
                 }
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentCard"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CardDataString"));
             }
         }
 
+        //public String CardData
+        //{
+        //    get
+        //    { return _cardData; }
+        //    set
+        //    {
+        //        _cardData = value;
+        //        if (value == null)
+        //        {
+                    
+        //        }
+        //        else
+        //        {
+        //        }
+        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CardDataString"));
+        //    }
+        //}
         //public string Filter
         //{
         //    get
@@ -110,6 +139,7 @@ namespace Final
         //}
 
 
+
         public void LoadCards()
         {
             List<Card> tempCards = (from p in DbConnection.Table<Card>() select p).ToList();
@@ -118,6 +148,7 @@ namespace Final
             {
                 _AllCards.Add(card);
                 Cards.Add(card);
+                
             }
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LoadCards)));
 

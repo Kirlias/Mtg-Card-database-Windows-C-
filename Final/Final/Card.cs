@@ -57,6 +57,10 @@ namespace Final
         public int multiverseid { get; set; }
         public string imageUrl { get; set; }
 
+        
+
+
+
         [TextBlob("printingsBlobbed")]
         public List<string> printings { get; set; }
         public string printingsBlobbed { get; set; }
@@ -85,7 +89,9 @@ namespace Final
         public List<int?> variations { get; set; }
         public int? variationsBlobbed { get; set; }
 
-        
+        public string cardDataString { get; set; }
+
+
     }
 
 

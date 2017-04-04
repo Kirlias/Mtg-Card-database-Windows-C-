@@ -40,7 +40,7 @@
                 <RowDefinition Height="53"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ListView x:Name="listView"
+            <ListView x:ConnectionId='2' x:Name="listView"
                   ItemTemplate="{StaticResource FinalTemplate}"
                   ItemsSource="{Binding Cards, Mode=TwoWay}" 
                   SelectedItem="{Binding SelectedCard, Mode=TwoWay}" 
@@ -49,7 +49,7 @@
 
 
             <ItemsControl Grid.RowSpan="2">
-                <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Search" Width="320" Height="65"/>
+                <TextBox x:ConnectionId='3' x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Search" Width="320" Height="65"/>
             </ItemsControl>
         </Grid>
         <Grid Grid.Column="1">
@@ -58,10 +58,11 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
             <WebView Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}" Margin="0,10,0,314"/>
-            <TextBlock x:Name="tbCardInfo" HorizontalAlignment="Left" Margin="10,411,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCard.cardDataString}" VerticalAlignment="Top" Height="245" Width="940"/>
+            <TextBlock x:ConnectionId='1' x:Name="tbCardInfo" HorizontalAlignment="Left" Margin="10,411,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCard.cardDataString}" VerticalAlignment="Top" Height="245" Width="940"/>
 
         </Grid>
 
 
     </Grid>
 </Page>
+
