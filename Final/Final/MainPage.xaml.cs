@@ -31,5 +31,15 @@ namespace Final
         {
             this.Frame.Navigate(typeof(CardPage));
         }
+
+        private void WebView_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CardPage));
+        }
+
+        private void WebView_PointerPressed(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }
