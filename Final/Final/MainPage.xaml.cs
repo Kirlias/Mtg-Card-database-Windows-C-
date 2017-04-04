@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -26,20 +27,10 @@ namespace Final
         {
             this.InitializeComponent();
         }
-
-        private void btnInfo_Click(object sender, RoutedEventArgs e)
+        
+        private void Image_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(CardPage));
-        }
-
-        private void WebView_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(CardPage));
-        }
-
-        private void WebView_PointerPressed(object sender, TappedRoutedEventArgs e)
-        {
-
         }
     }
 }

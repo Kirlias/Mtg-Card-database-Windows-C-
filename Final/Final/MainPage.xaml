@@ -59,10 +59,10 @@
                 <RowDefinition  Height="Auto"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Image Grid.RowSpan="2">
+            <Image Grid.RowSpan="2" PointerPressed="Image_PointerPressed">
                 <Image.Source>
                     <BitmapImage UriSource="{Binding CurrentCard.imageUrl}" />
-                </Image.Source>
+                </Image.Source> 
             </Image>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="940"/>
 

@@ -21,6 +21,7 @@ namespace Final
         public Card CurrentCard { get; set; }
         public ObservableCollection<Card> Cards { get; set; }
         public string CardName { get; set;}
+        public Card LastCard { get; set; }
 
         //private string _filter;
         private List<Card> _AllCards = new List<Card>();
@@ -57,6 +58,7 @@ namespace Final
                 }
                 else
                 {
+                    LastCard = CurrentCard;
                     CurrentCard = value;
                 }
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentCard"));

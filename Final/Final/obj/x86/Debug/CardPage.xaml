@@ -20,7 +20,7 @@
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.Content>
-                <TextBlock Text="{Binding SelectedCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
+                <TextBlock Text="{Binding LastCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
             </CommandBar.Content>
             <AppBarButton x:ConnectionId='1' Icon="Back" Label="Back" ToolTipService.ToolTip="Back To List"                           />
 

@@ -40,7 +40,7 @@
                 <RowDefinition Height="53"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ListView x:ConnectionId='2' x:Name="listView"
+            <ListView x:ConnectionId='3' x:Name="listView"
                   ItemTemplate="{StaticResource FinalTemplate}"
                   ItemsSource="{Binding Cards, Mode=TwoWay}" 
                   SelectedItem="{Binding SelectedCard, Mode=TwoWay}" 
@@ -50,7 +50,7 @@
 
             <ItemsControl Grid.RowSpan="2">
                 <Border BorderBrush="{x:Null}" Height="65">
-                    <TextBox x:ConnectionId='3' x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Center"  TextWrapping="Wrap" PlaceholderText="Search" Width="320" FontSize="24"/>
+                    <TextBox x:ConnectionId='4' x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Center"  TextWrapping="Wrap" PlaceholderText="Search" Width="320" FontSize="24"/>
                 </Border>
             </ItemsControl>
         </Grid>
@@ -59,12 +59,12 @@
                 <RowDefinition  Height="Auto"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Image Grid.RowSpan="2">
+            <Image x:ConnectionId='1' Grid.RowSpan="2"                                      >
                 <Image.Source>
                     <BitmapImage UriSource="{Binding CurrentCard.imageUrl}" />
-                </Image.Source>
+                </Image.Source> 
             </Image>
-            <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="940"/>
+            <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="940"/>
 
         </Grid>
 
