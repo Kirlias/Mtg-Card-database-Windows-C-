@@ -50,7 +50,7 @@
 
             <ItemsControl Grid.RowSpan="2">
                 <Border BorderBrush="{x:Null}" Height="65">
-                    <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Center"  TextWrapping="Wrap" PlaceholderText="Search" Width="320" FontSize="24"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Center"  TextWrapping="Wrap" PlaceholderText="Search" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="320" FontSize="24"/>
                 </Border>
             </ItemsControl>
         </Grid>
@@ -59,12 +59,12 @@
                 <RowDefinition  Height="Auto"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Image Grid.RowSpan="2" PointerPressed="Image_PointerPressed">
+            <Image Grid.RowSpan="2" Tag="{Binding CurrentCard}" PointerPressed="Image_PointerPressed" ToolTipService.ToolTip="Click image to view more info.">
                 <Image.Source>
                     <BitmapImage UriSource="{Binding CurrentCard.imageUrl}" />
                 </Image.Source> 
             </Image>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="940"/>
+            <!--<TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCard.cardDataString}" VerticalAlignment="Top" Height="281" Width="940"/>-->
 
         </Grid>
 

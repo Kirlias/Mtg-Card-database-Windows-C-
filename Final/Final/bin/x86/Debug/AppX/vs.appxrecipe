@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\fripi\Source\Repos\Mtg-Card-database-Windows-C-\Final\Final\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-04T20:28:30.163</Modified>
+      <Modified>2017-04-05T14:57:46.084</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\fripi\Source\Repos\Mtg-Card-database-Windows-C-\Final\Final\bin\x86\Debug\Final.exe">
       <PackagePath>entrypoint\Final.exe</PackagePath>
-      <Modified>2017-04-04T20:28:29.444</Modified>
+      <Modified>2017-04-05T14:57:45.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\fripi\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\fripi\Source\Repos\Mtg-Card-database-Windows-C-\Final\Final\bin\x86\Debug\Final.xr.xml">
       <PackagePath>Final.xr.xml</PackagePath>
-      <Modified>2017-04-04T20:28:29.205</Modified>
+      <Modified>2017-04-05T14:57:45.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\fripi\Source\Repos\Mtg-Card-database-Windows-C-\Final\Final\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-04T20:28:29.956</Modified>
+      <Modified>2017-04-05T14:57:45.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\fripi\Source\Repos\Mtg-Card-database-Windows-C-\Final\Final\bin\x86\Debug\Core\Final.exe">
       <PackagePath>Final.exe</PackagePath>
-      <Modified>2017-04-04T20:28:30.150</Modified>
+      <Modified>2017-04-05T14:57:46.079</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -26,11 +26,15 @@ namespace Final
         public MainPage()
         {
             this.InitializeComponent();
+            //This will cache your page and every time you navigate to this 
+            //page a new page will not be created.
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
         
         private void Image_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(CardPage));
+            var CurrentCard = ((Image)sender).Tag;
+            this.Frame.Navigate(typeof(CardPage), CurrentCard);
         }
     }
 }
