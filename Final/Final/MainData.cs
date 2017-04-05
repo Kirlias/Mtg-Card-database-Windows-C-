@@ -58,7 +58,7 @@ namespace Final
                     CardDataString = null;
                 }
                 else
-                {  
+                {
                     CurrentCard = value;
                     CardDataString = "Name: " + CurrentCard.name + 
                         "\nType: " + CurrentCard.type + 

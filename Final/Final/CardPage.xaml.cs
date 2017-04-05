@@ -27,9 +27,18 @@ namespace Final
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Card CurrentCard = e.Parameter as Card;
+            System.Diagnostics.Debug.WriteLine(CurrentCard.cardDataString);
+            CardName.Text = CurrentCard.name;
+            CardText.Text = CurrentCard.cardDataString;
+            ImageSource.UriSource = new System.Uri(CurrentCard.imageUrl);
+        }
+
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.GoBack();
         }
     }
 }

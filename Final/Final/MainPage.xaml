@@ -22,7 +22,7 @@
             <CommandBar.Content>
                 <TextBlock Text="{Binding CurrentCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
             </CommandBar.Content>
-            <AppBarButton Icon="Download" Label="appbarbutton" Command="{Binding LoadBtnCmd, Mode=OneWay}"/>
+            <AppBarButton Icon="Download" Label="Download" Command="{Binding LoadBtnCmd, Mode=OneWay}"/>
 
         </CommandBar>
     </Page.BottomAppBar>
@@ -49,7 +49,9 @@
 
 
             <ItemsControl Grid.RowSpan="2">
-                <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="320" Height="65" />
+                <Border BorderBrush="{x:Null}" Height="65">
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Center"  TextWrapping="Wrap" PlaceholderText="Search" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="320" FontSize="24"/>
+                </Border>
             </ItemsControl>
         </Grid>
         <Grid Grid.Column="1">
@@ -57,8 +59,12 @@
                 <RowDefinition  Height="Auto"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <WebView Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}" Margin="0,10,0,314"/>
-            <TextBlock x:Name="tbCardInfo" HorizontalAlignment="Left" Margin="10,411,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCard.cardDataString}" VerticalAlignment="Top" Height="245" Width="940"/>
+            <Image Grid.RowSpan="2" Tag="{Binding CurrentCard}" PointerPressed="Image_PointerPressed" ToolTipService.ToolTip="Click image to view more info.">
+                <Image.Source>
+                    <BitmapImage UriSource="{Binding CurrentCard.imageUrl}" />
+                </Image.Source> 
+            </Image>
+            <!--<TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCard.cardDataString}" VerticalAlignment="Top" Height="281" Width="940"/>-->
 
         </Grid>
 

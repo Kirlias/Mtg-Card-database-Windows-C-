@@ -6,29 +6,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainData}">
-    <Page.Resources>
-        <DataTemplate x:Key="FinalTemplate">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding name, Mode=OneWay}"/>
-                <ItemsControl ItemsSource="{Binding Cards, Mode=OneWay}"/>
-            </StackPanel>
-        </DataTemplate>
-    </Page.Resources>
     <Page.DataContext>
         <local:MainData/>
     </Page.DataContext>
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.Content>
-                <TextBlock Text="{Binding CurrentCard.name, Mode=TwoWay}" FontSize="20" Margin="10,10,0,0"/>
+                <TextBlock x:ConnectionId='1' Name="CardName" Text="" FontSize="20" Margin="10,10,0,0"/>
             </CommandBar.Content>
-            <AppBarButton x:ConnectionId='1' Icon="Back" Label="Back" ToolTipService.ToolTip="Back To List"                           />
+            <AppBarButton x:ConnectionId='2' Icon="Back" Label="Back" ToolTipService.ToolTip="Back To List"                           />
 
         </CommandBar>
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition Height="300"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" MaxHeight="600" Margin="0,20,0,0">
+            <Image.Source>
+                <BitmapImage x:ConnectionId='4' x:Name="ImageSource" UriSource="" />
+            </Image.Source>
+        </Image>
+        <TextBlock x:ConnectionId='3' Grid.Row="1" x:Name="CardText" HorizontalAlignment="Left" Margin="20,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
     </Grid>
 </Page>
 
