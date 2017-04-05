@@ -29,7 +29,6 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="1280">
 
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="320"/>
             <ColumnDefinition/>
@@ -40,13 +39,15 @@
                 <RowDefinition Height="53"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ListView x:ConnectionId='3' x:Name="listView"
+            <ListView x:ConnectionId='2' x:Name="listView"
                   ItemTemplate="{StaticResource FinalTemplate}"
                   ItemsSource="{Binding Cards, Mode=TwoWay}" 
                   SelectedItem="{Binding SelectedCard, Mode=TwoWay}" 
                   Grid.Row="2" Margin="0,5,0,0"
         />
-
+            <ItemsControl Grid.RowSpan="2">
+                <TextBox x:ConnectionId='3' x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="320" Height="65" />
+            </ItemsControl>
 
             <ItemsControl Grid.RowSpan="2">
                 <Border BorderBrush="{x:Null}" Height="65">
@@ -65,6 +66,8 @@
                 </Image.Source> 
             </Image>
             <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,375,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="940"/>
+            <WebView Grid.RowSpan="2"  Source="{Binding CurrentCard.imageUrl}" Margin="0,10,0,314"/>
+            <TextBlock x:ConnectionId='1' x:Name="tbCardInfo" HorizontalAlignment="Left" Margin="10,411,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCard.cardDataString}" VerticalAlignment="Top" Height="245" Width="940"/>
 
         </Grid>
 

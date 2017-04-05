@@ -6,7 +6,9 @@
     <RootPropertyPathName Name="LastCard" />
     <RootPropertyPathName Name="CurrentCard" />
     <RootPropertyPathName Name="LoadBtnCmd" />
+    <RootPropertyPathName Name="cardDataString" />
     <RootPropertyPathName Name="imageUrl" />
+    <RootPropertyPathName Name="Filter" />
     <RootPropertyPathName Name="SelectedCard" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -42,6 +44,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Final.MainData" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">

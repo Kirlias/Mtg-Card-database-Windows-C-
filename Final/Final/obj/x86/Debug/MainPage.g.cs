@@ -26,23 +26,15 @@ namespace Final
             {
             case 1:
                 {
-                    global::Windows.UI.Xaml.Controls.Image element1 = (global::Windows.UI.Xaml.Controls.Image)(target);
-                    #line 62 "..\..\..\MainPage.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Image)element1).PointerPressed += this.Image_PointerPressed;
-                    #line default
+                    this.tbCardInfo = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                 }
                 break;
             case 2:
                 {
-                    this.textBlock = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
-                }
-                break;
-            case 3:
-                {
                     this.listView = (global::Windows.UI.Xaml.Controls.ListView)(target);
                 }
                 break;
-            case 4:
+            case 3:
                 {
                     this.textBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                 }

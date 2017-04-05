@@ -3,10 +3,11 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Cards" />
     <RootPropertyPathName Name="name" />
-    <RootPropertyPathName Name="LastCard" />
     <RootPropertyPathName Name="CurrentCard" />
     <RootPropertyPathName Name="LoadBtnCmd" />
+    <RootPropertyPathName Name="cardDataString" />
     <RootPropertyPathName Name="imageUrl" />
+    <RootPropertyPathName Name="Filter" />
     <RootPropertyPathName Name="SelectedCard" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -42,6 +43,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Final.MainData" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
@@ -80,12 +82,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Source" />
-      <RootEvent Name="PointerPressed" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Imaging.BitmapImage">
-      <RootProperty Name="UriSource" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemTemplate" />
@@ -93,19 +92,12 @@
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Border">
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Child" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Width" />
-      <RootProperty Name="FontSize" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Final.MainPage" />
