@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.ViewManagement;
 
 namespace Final
 {
@@ -30,6 +31,8 @@ namespace Final
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            
+            
         }
 
         /// <summary>

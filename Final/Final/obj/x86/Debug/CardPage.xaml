@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Final.CardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Final"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainData}">
+    <Page.DataContext>
+        <local:MainData/>
+    </Page.DataContext>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <TextBlock x:ConnectionId='1' Name="CardName" Text="" FontSize="20" Margin="10,10,0,0"/>
+            </CommandBar.Content>
+            <AppBarButton x:ConnectionId='2' Icon="Back" Label="Back" ToolTipService.ToolTip="Back To List"                           />
+
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ButtonBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition Height="300"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" MaxHeight="300" Margin="0,20,0,0">
+            <Image.Source>
+                <BitmapImage x:ConnectionId='4' x:Name="ImageSource" UriSource="" />
+            </Image.Source>
+        </Image>
+        <TextBlock x:ConnectionId='3' Grid.Row="1" x:Name="CardText" HorizontalAlignment="Center" Margin="20,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextAlignment="Center"/>
+    </Grid>
+</Page>
+

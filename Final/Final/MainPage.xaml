@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:Name="Magic_The_Gathering_Alpha_Search"
     x:Class="Final.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -27,7 +27,7 @@
         </CommandBar>
     </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ButtonBackgroundThemeBrush}">
 
 
         <Grid.ColumnDefinitions>
