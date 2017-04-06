@@ -27,7 +27,7 @@
         </CommandBar>
     </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="1280">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
         <Grid.ColumnDefinitions>

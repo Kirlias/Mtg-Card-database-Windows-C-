@@ -47,8 +47,6 @@
       <RootProperty Name="Background" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="ColumnDefinitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
