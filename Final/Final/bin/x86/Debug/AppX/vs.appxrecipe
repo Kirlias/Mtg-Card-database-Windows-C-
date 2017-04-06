@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>5172B437425C70185010247EF8490627B9411BBC8112C29708A6BD31EC807077</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>8F9E3474DADB553E5A2650F6BB6E69091437ED20187E64D262AFDCF5FBB16D9D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1bca0190-3f22-456b-942f-288f71122bdc_1.0.0.0_x86__zzsfn1madwkh2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1bca0190-3f22-456b-942f-288f71122bdc_zzsfn1madwkh2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1bca0190-3f22-456b-942f-288f71122bdc</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T14:09:23.822</Modified>
+      <Modified>2017-04-06T14:21:02.663</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\bin\x86\Debug\Final.exe">
       <PackagePath>entrypoint\Final.exe</PackagePath>
-      <Modified>2017-04-06T14:09:23.010</Modified>
+      <Modified>2017-04-06T14:17:39.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -468,9 +468,209 @@
       <PackagePath>sqlite3.dll</PackagePath>
       <Modified>2017-04-04T15:53:48.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-04-06T12:39:41.622</Modified>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\mtg card back.png">
+      <PackagePath>Assets\mtg card back.png</PackagePath>
+      <Modified>2017-04-06T14:18:59.356</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\NewStoreLogo.scale-100.png">
+      <PackagePath>Assets\NewStoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:51.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\NewStoreLogo.scale-125.png">
+      <PackagePath>Assets\NewStoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:51.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\NewStoreLogo.scale-150.png">
+      <PackagePath>Assets\NewStoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:51.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\NewStoreLogo.scale-200.png">
+      <PackagePath>Assets\NewStoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:51.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\NewStoreLogo.scale-400.png">
+      <PackagePath>Assets\NewStoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:51.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:54.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:54.748</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:54.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:54.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.544</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.557</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:51.003</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.975</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.928</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.483</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.481</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.481</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.514</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.635</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-06T14:20:50.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -479,32 +679,35 @@
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T12:39:38.643</Modified>
+      <Modified>2017-04-06T14:20:54.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T12:39:38.643</Modified>
+      <Modified>2017-04-06T14:20:50.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T12:39:38.659</Modified>
+      <Modified>2017-04-06T14:20:50.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T12:39:38.659</Modified>
+      <Modified>2017-04-06T14:20:50.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-06T12:39:38.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T12:39:38.659</Modified>
+      <Modified>2017-04-06T14:20:50.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2017-04-06T12:39:41.622</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\bin\x86\Debug\Final.xr.xml">
       <PackagePath>Final.xr.xml</PackagePath>
@@ -517,11 +720,11 @@
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T14:09:23.545</Modified>
+      <Modified>2017-04-06T14:21:02.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Source\Repos\Mtg-Card-database-Windows-C-5\Final\Final\bin\x86\Debug\Core\Final.exe">
       <PackagePath>Final.exe</PackagePath>
-      <Modified>2017-04-06T14:09:23.811</Modified>
+      <Modified>2017-04-06T14:21:02.659</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
